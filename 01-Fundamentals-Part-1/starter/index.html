@@ -8,7 +8,7 @@
     <style>
       body {
         height: 100vh;
-        display: flex;
+        display: inline-block;
         align-items: center;
         background: linear-gradient(to top left, #28b487, #7dd56f);
       }
@@ -22,9 +22,27 @@
         color: white;
       }
     </style>
-    <script src="script.js"></script>
   </head>
   <body>
-    <h1>JavaScript Fundamentals – Part 1</h1>
+    <h1>BMI Comparsion</h1>
+    <p>First Person</p>
+      <label for="name1">Name:</label>
+      <input type="text" id="name1" name="name1"><br>
+      <label for="mass1">Mass(kg):</label>
+      <input type="text" id="mass1" name="mass1"><br>
+      <label for="height1">Height(m):</label>
+      <input type="text" id="height1" name="height1"><br>
+      <p>Second Person</p>
+      <label for="name2">Name:</label>
+      <input type="text" id="name2" name="name2"><br>
+      <label for="mass2">Mass(kg):</label>
+      <input type="text" id="mass2" name="mass2"><br>
+      <label for="height2">Height(m):</label>
+      <input type="text" id="height2" name="height2"><br>
+      <button onclick="calculateBMI()">SUBMIT</button>
+    <p><p id="outputname1"></p>'s BMI is: <p id="bmi1"></p></p>
+    <p><p id="outputname2"></p>'s BMI is: </p><p id="bmi2"></p>
+    <p id="result"></p>
+    <script src="script.js"></script>
   </body>
 </html>
